@@ -1,4 +1,4 @@
-body, main, .description-wrapper, .benefits-image, .recomandation-body-title {
+body, main, .description-wrapper, .benefits-image, .recomandation-body-title, .modal-credit-card-inner {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,6 +30,9 @@ button {
 }
 button:active {
   background-color: #304fb4;
+}
+button:first-child {
+  margin: 0;
 }
 
 .title {
@@ -285,4 +288,88 @@ i {
 
 aside a {
   font-size: 20px;
+}
+
+.modal-credit-card {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(82, 82, 82, 0.5);
+}
+.modal-credit-card-inner {
+  max-width: 500px;
+  width: 100%;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #5a5a5a;
+  margin: 0 10px;
+  white-space: nowrap;
+}
+.modal-credit-card input {
+  border: none;
+  border-bottom: 1px solid #555555;
+  background-color: #f8f8b2;
+}
+.modal-credit-card select {
+  border: none;
+  border-bottom: 1px solid #555555;
+  background-color: #f8f8b2;
+}
+.modal-credit-card textarea {
+  resize: none;
+  background-color: #f8f8b2;
+  border: none;
+  border-bottom: 1px solid #555555;
+}
+.modal-credit-card option {
+  background-color: #fff;
+}
+
+.modal-credit-card-inner-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+}
+
+.modal-credit-card-inner-header i {
+  position: static;
+}
+
+.modal-credit-card-inner-body {
+  width: 100%;
+  grid-gap: 10px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 10px;
+}
+
+.modal-credit-card-inner-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modal-credit-card-inner-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.modal-credit-card-inner-footer a {
+  color: #363636;
+  justify-self: flex-start;
+}
+
+.modal-credit-card-inner-footer-btn {
+  justify-self: flex-end;
+}
+
+.modal-credit-card-inner-footer-btn button {
+  padding: 5px 15px;
 }

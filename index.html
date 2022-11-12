@@ -11,7 +11,7 @@
     <script src="./js/index.js"></script>
     <link rel="shortcut icon" href="./images/icon/217853.png">
 </head>
-<body>
+<body id="body">
     <header>
         <div class="header-inner">
             <img src="./images/logo/logo.png" alt="logo">
@@ -74,7 +74,7 @@
                         Using your physical or virtual credit and debit card, you pay for everything and everyone and can even pay in installments on credit. In addition, you can still earn cashback, that is, cash back.
                     </div>
                     <div class="benefits-left-side-download-app-btn">
-                        <button>Ask for credit card</button>
+                        <button onclick="modalCreditCardOpen()">Ask for credit card</button>
                     </div>
                 </article>
                 <div class="benefits-image">
@@ -110,5 +110,47 @@
             <a href="#">Blog</a>
         </div>
     </aside>
+    <div class="modal-credit-card" id="modal-credit-card">
+        <div class="modal-credit-card-inner">
+            <div class="modal-credit-card-inner-header">
+                <div class="modal-credit-card-inner-title">
+                    Details
+                </div>
+                <i id="i3" class="fa-solid fa-xmark" onclick="modalCreditCardClose()"></i>
+            </div>
+            <div class="modal-credit-card-inner-body">
+                <div class="modal-credit-card-inner-body-name">
+                    FullName:
+                </div>
+                <input type="text" name="name" id="name">
+                <div class="modal-credit-card-inner-body-type-of-card">
+                    Type of card:
+                </div>
+                <select name="cards" id="cards">
+                    <option value="MasterCard">MasterCard</option>
+                    <option value="Visa">Visa</option>
+                    <option value="RuPay">RuPay</option>
+                </select>
+                <div class="modal-credit-card-inner-body-phone-number">
+                    Phone nr:
+                </div>
+                <input type="tel" name="number" id="number">
+                <div class="modal-credit-card-inner-body-email">
+                    Email:
+                </div>
+                <input type="email" name="email" id="email">
+                <div class="modal-credit-card-inner-body-reason">
+                    Why you need<br>a credit card?
+                </div>
+                <textarea name="message" id="message" maxlength="250"></textarea>
+            </div>
+            <div class="modal-credit-card-inner-footer">
+                <div class="modal-credit-card-inner-footer-btn">
+                    <button type="submit">Submit</button>
+                </div>
+                <a href="tel:+9999999999">+99 999 999 99</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
