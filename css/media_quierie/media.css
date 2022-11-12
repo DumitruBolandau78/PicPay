@@ -1,0 +1,54 @@
+@media (max-width: 789px){
+    .header-inner {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 10px;
+    }
+
+    .header-download-app-btn {
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+
+    nav {
+        display: none;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    aside {
+        display: block;
+    }
+}
+
+@media (max-width: 714px){
+    .description-wrapper-inner {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .invitation-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .invitation-image {
+        grid-row: 2;
+    }
+
+    .benefits-wrapper-inner {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .recomandation-body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .title:last-child {
+        margin-bottom: 10px;
+    }
+}
