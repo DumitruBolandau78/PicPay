@@ -122,12 +122,12 @@
                 <div class="modal-credit-card-inner-body-name">
                     FullName:
                 </div>
-                <input type="text" name="name" id="name">
+                <input type="text" name="fullName" id="fullName">
                 <div class="modal-credit-card-inner-body-type-of-card">
                     Type of card:
                 </div>
                 <select name="cards" id="cards">
-                    <option value="MasterCard">MasterCard</option>
+                    <option id="MasterCard" value="MasterCard">MasterCard</option>
                     <option value="Visa">Visa</option>
                     <option value="RuPay">RuPay</option>
                 </select>
@@ -146,7 +146,7 @@
             </div>
             <div class="modal-credit-card-inner-footer">
                 <div class="modal-credit-card-inner-footer-btn">
-                    <button type="submit">Submit</button>
+                    <button onclick="submit()" type="submit">Submit</button>
                 </div>
                 <a href="tel:+9999999999">Call us</a>
             </div>
