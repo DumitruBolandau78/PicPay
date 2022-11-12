@@ -51,6 +51,7 @@ header {
     display: flex;
     justify-content: center;
     background-color: $green;
+    align-items: center;
 }
 
 .header-inner {
@@ -308,6 +309,11 @@ i {
 .aside-menu-logo img {
     width: 100%;
     max-width: 150px;
+    background-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: url('../images/logo/tree-736885__480.jpg');
 }
 
 aside a {

@@ -2,6 +2,7 @@
     .header-inner {
         grid-template-columns: 1fr 1fr;
         margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .header-download-app-btn {
