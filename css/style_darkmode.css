@@ -255,7 +255,7 @@ body, main, .description-wrapper, .benefits-image, .recomandation-body-title, .m
   }
   
   aside {
-    background-color: #75a6c2;
+    background-color: black;
     position: fixed;
     top: 0;
     left: -100%;
@@ -264,9 +264,11 @@ body, main, .description-wrapper, .benefits-image, .recomandation-body-title, .m
     height: 100vh;
     transition: .4s ease-in-out;
     display: none;
+    border-right: #fff;
   }
   aside a {
     font-size: 20px;
+    color: #fff;
   }
   
   .aside-menu {
