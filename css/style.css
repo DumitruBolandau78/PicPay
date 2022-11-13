@@ -317,12 +317,14 @@ aside a {
   border-bottom: 1px solid #555555;
   background-color: #f8f8b2;
   outline: none;
+  padding: 0 5px;
 }
 .modal-credit-card select {
   border: none;
   border-bottom: 1px solid #555555;
   background-color: #f8f8b2;
   outline: none;
+  padding: 0 5px;
 }
 .modal-credit-card textarea {
   resize: none;
@@ -331,6 +333,7 @@ aside a {
   border-bottom: 1px solid #555555;
   outline: none;
   height: 100px;
+  padding: 5px;
 }
 .modal-credit-card option {
   background-color: #fff;
