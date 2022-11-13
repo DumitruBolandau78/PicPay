@@ -105,9 +105,9 @@ header {
 
     i {
         font-size: 25px;
-        position: relative;
-        top: 5px;
-        margin-left: 10px;
+        position: fixed;
+        top: 10px;
+        left: 50px;
         cursor: pointer;
         color: black;
     }

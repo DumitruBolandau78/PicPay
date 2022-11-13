@@ -93,11 +93,11 @@ body, main, .description-wrapper, .benefits-image, .recomandation-body-title, .m
   }
   .header-inner i {
     font-size: 25px;
-    position: relative;
-    top: 5px;
-    margin-left: 10px;
-    cursor: pointer;
-    color: #fff;
+        position: fixed;
+        top: 10px;
+        left: 50px;
+        cursor: pointer;
+        color: #fff;
   }
   
   main {
@@ -283,6 +283,7 @@ body, main, .description-wrapper, .benefits-image, .recomandation-body-title, .m
     top: 10px;
     left: 10px;
     font-size: 25px;
+    color: white;
   }
   
   #i2 {
@@ -291,6 +292,7 @@ body, main, .description-wrapper, .benefits-image, .recomandation-body-title, .m
     top: 10px;
     left: 10px;
     font-size: 25px;
+    color: white;
   }
   
   .aside-menu-logo {
