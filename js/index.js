@@ -25,6 +25,10 @@ function modalCreditCardClose() {
     document.getElementById("modal-credit-card").style.display = 'none';
 }
 
+function forSubmit(){
+    
+}
+
 function submit(){
     let fullName = document.getElementById('fullName').value;
     let number = document.getElementById('number').value;
@@ -35,7 +39,6 @@ function submit(){
         alert('Please fill out the form!')
     }
     else {
-        alert('Thank you for your request')
         document.getElementById('fullName').value = '';
         document.getElementById('number').value = '';
         document.getElementById('email').value = '';
@@ -44,5 +47,13 @@ function submit(){
         document.getElementById('body').style.overflowY = 'scroll';
         document.getElementById("modal-credit-card").style.display = 'none';
         document.getElementById('MasterCard').selected = 'selected';
+        document.getElementById('modal-submit').style.right = '0';
+        setTimeout(() => {
+            document.getElementById('modal-submit').style.right = '-100%';
+        }, 6000);
     }
+}
+
+function modalSubmitClose(){
+    document.getElementById('modal-submit').style.right = '-100%';
 }

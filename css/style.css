@@ -266,15 +266,19 @@ aside {
   width: 100%;
 }
 
-i {
-  font-size: 25px;
+#i1 {
   position: fixed;
   top: 10px;
   left: 10px;
+  font-size: 25px;
 }
 
 #i2 {
   display: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 25px;
 }
 
 .aside-menu-logo {
@@ -313,6 +317,7 @@ aside a {
   border: none;
   border-bottom: 1px solid #555555;
   background-color: #f8f8b2;
+  outline: none;
 }
 .modal-credit-card select {
   border: none;
@@ -325,9 +330,11 @@ aside a {
   background-color: #f8f8b2;
   border: none;
   border-bottom: 1px solid #555555;
+  outline: none;
 }
 .modal-credit-card option {
   background-color: #fff;
+  outline: none;
 }
 
 .modal-credit-card-inner-header {
@@ -367,6 +374,7 @@ aside a {
   color: #363636;
   justify-self: flex-start;
   border-bottom: 1px solid #363636;
+  font-weight: bold;
 }
 
 .modal-credit-card-inner-footer-btn {
@@ -387,4 +395,54 @@ aside a {
 
 .benefits-left-side-download-app-btn {
   margin-bottom: 10px;
+}
+
+.modal-submit {
+  height: 250px;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #fdfdfd;
+  position: fixed;
+  bottom: 0;
+  right: -100%;
+  padding: 10px;
+  transition: 4s;
+}
+
+.modal-submit-close {
+  width: 100%;
+  float: right;
+}
+.modal-submit-close i {
+  color: #363636;
+  font-size: 20px;
+  float: right;
+}
+
+.modal-submit-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+}
+
+.modal-submit-checked {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-submit-checked i {
+  font-size: 100px;
+  color: #11C76F;
+}
+
+.modal-submit-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
 }

@@ -290,15 +290,19 @@ aside {
     width: 100%;
 }
 
-i {
-    font-size: 25px;
+#i1 {
     position: fixed;
     top: 10px;
     left: 10px;
+    font-size: 25px;
 }
 
 #i2 {
     display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
 }
 
 .aside-menu-logo {
@@ -339,6 +343,7 @@ aside a {
         border: none;
         border-bottom: 1px solid rgb(85, 85, 85);
         background-color: rgb(248, 248, 178);
+        outline: none;
     }
 
     select {
@@ -353,10 +358,12 @@ aside a {
         background-color: rgb(248, 248, 178);
         border: none;
         border-bottom: 1px solid rgb(85, 85, 85);
+        outline: none;
     }
 
     option {
         background-color: #fff;
+        outline: none;
     }
 }
 
@@ -396,7 +403,8 @@ aside a {
 .modal-credit-card-inner-footer a {
     color: rgb(54, 54, 54);
     justify-self: flex-start;
-    border-bottom: 1px solid rgb(54, 54, 54);;
+    border-bottom: 1px solid rgb(54, 54, 54);
+    font-weight: bold;
 }
 
 .modal-credit-card-inner-footer-btn {
@@ -417,4 +425,55 @@ aside a {
 
 .benefits-left-side-download-app-btn {
     margin-bottom: 10px;
+}
+
+.modal-submit {
+    height: 250px;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgb(253, 253, 253);
+    position: fixed;
+    bottom: 0;
+    right: -100%;
+    padding: 10px;
+    transition: 4s;
+}
+
+.modal-submit-close {
+    width: 100%;
+    float: right;
+
+    i {
+        color: rgb(54, 54, 54);
+        font-size: 20px;
+        float: right;
+    }
+}
+
+.modal-submit-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+
+.modal-submit-checked {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-submit-checked i {
+    font-size: 100px;
+    color: #11C76F;
+}
+
+.modal-submit-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
 }

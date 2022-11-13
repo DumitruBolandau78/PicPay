@@ -53,3 +53,9 @@
         margin-bottom: 10px;
     }
 }
+
+@media (max-width: 600px){
+    .modal-submit {
+        display: none;
+    }
+}
