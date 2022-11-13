@@ -25,33 +25,43 @@ function modalCreditCardClose() {
     document.getElementById("modal-credit-card").style.display = 'none';
 }
 
-function forSubmit(){
-    
-}
+// document.addEventListener('DOMContentLoaded', submit);
 
 function submit(){
+    let query = window.matchMedia("(max-width: 600px)");
+
     let fullName = document.getElementById('fullName').value;
     let number = document.getElementById('number').value;
     let email = document.getElementById('email').value;
     let message = document.getElementById('message').value;
 
-    if (fullName === '' || number === '' || email === '' || message === ''){
-        alert('Please fill out the form!')
+    if (!query.matches){
+        if (fullName === '' || number === '' || email === '' || message === ''){
+            alert('Please fill out the form!')
+        }
+        else {
+            document.getElementById('fullName').value = '';
+            document.getElementById('number').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
+            document.getElementById("i3").style.display = 'none';
+            document.getElementById('body').style.overflowY = 'scroll';
+            document.getElementById("modal-credit-card").style.display = 'none';
+            document.getElementById('MasterCard').selected = 'selected';
+            document.getElementById('modal-submit').style.right = '0';
+            setTimeout(() => {
+                document.getElementById('modal-submit').style.right = '-100%';
+            }, 6000);
+        }
     }
     else {
+        alert('Thank you for your request');
         document.getElementById('fullName').value = '';
         document.getElementById('number').value = '';
         document.getElementById('email').value = '';
         document.getElementById('message').value = '';
-        document.getElementById("i3").style.display = 'none';
-        document.getElementById('body').style.overflowY = 'scroll';
-        document.getElementById("modal-credit-card").style.display = 'none';
         document.getElementById('MasterCard').selected = 'selected';
-        document.getElementById('modal-submit').style.right = '0';
-        setTimeout(() => {
-            document.getElementById('modal-submit').style.right = '-100%';
-        }, 6000);
-    }
+    }    
 }
 
 function modalSubmitClose(){
