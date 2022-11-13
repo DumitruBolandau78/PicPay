@@ -1,0 +1,457 @@
+body, main, .description-wrapper, .benefits-image, .recomandation-body-title, .modal-credit-card-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 85%;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: black;
+  }
+  
+  button {
+    background-color: #426DFF;
+    border: 1px solid #426DFF;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  button:active {
+    background-color: #304fb4;
+  }
+  button:first-child {
+    margin: 0;
+  }
+  
+  .title {
+    font-size: clamp(23px, 4vw, 30px);
+    margin-top: 10px;
+  }
+  
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    align-items: center;
+  }
+  
+  .header-inner {
+    max-width: 1180px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    justify-items: center;
+    font-size: 15px;
+    margin: 0 10px;
+  }
+  .header-inner img {
+    width: 100px;
+  }
+  .header-inner ul {
+    display: flex;
+  }
+  .header-inner li {
+    list-style: none;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+  }
+  .header-inner li a::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -3px;
+    left: 0;
+    background-color: #fff;
+    transform: scale(0);
+    transition: transform .3s ease-in-out;
+  }
+  .header-inner li a:hover::before {
+    transform: scaleX(1);
+  }
+  .header-inner a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+  }
+  .header-inner i {
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  main {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .description-wrapper {
+    width: 100%;
+    background-color: black;
+    padding: 0 10px;
+    color: #fff;
+  }
+  .description-wrapper-inner {
+    width: 100%;
+    max-width: 1180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .description-left-side {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+  
+  .description-image {
+    width: 100%;
+  }
+  .description-image img {
+    width: 100%;
+  }
+  
+  .description-left-side-title {
+    font-size: clamp(25px, 4vw, 40px);
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  
+  .description-left-side-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .invitation-wrapper {
+    width: 100%;
+    max-width: 1180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 10px;
+  }
+  
+  .invitation-image {
+    width: 100%;
+  }
+  .invitation-image img {
+    width: 100%;
+  }
+  
+  .invitation-right-side {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  
+  .invitation-right-side-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #11C76F;
+  }
+  
+  .invitation-right-side-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .benefits-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 0 10px;
+  }
+  .benefits-wrapper-inner {
+    width: 100%;
+    max-width: 1180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .benefits-left-side {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+  
+  .benefits-image {
+    width: 100%;
+  }
+  .benefits-image img {
+    width: 100%;
+  }
+  
+  .benefits-left-side-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #11C76F;
+  }
+  
+  .benefits-left-side-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .recomandation-wrapper {
+    width: 100%;
+    max-width: 1180px;
+    text-align: center;
+    padding: 0 10px;
+  }
+  
+  .recomandation-title {
+    color: #11C76F;
+    font-weight: bold;
+    margin: 20px 10px;
+  }
+  
+  .recomandation-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .recomandation-image {
+    width: 100%;
+  }
+  .recomandation-image img {
+    width: 100%;
+  }
+  
+  .recomandation-body-title {
+    color: red;
+    font-weight: bold;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    margin: 10px 0;
+  }
+  
+  aside {
+    background-color: #75a6c2;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    max-width: 300px;
+    width: 100%;
+    height: 100vh;
+    transition: .4s ease-in-out;
+    display: none;
+  }
+  aside a {
+    font-size: 20px;
+  }
+  
+  .aside-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  #i1 {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+  }
+  
+  #i2 {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+  }
+  
+  .aside-menu-logo {
+    position: relative;
+    bottom: 100px;
+  }
+  
+  .aside-menu-logo img {
+    width: 100%;
+    max-width: 150px;
+  }
+  
+  .modal-credit-card {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(82, 82, 82, 0.5);
+  }
+  .modal-credit-card-inner {
+    max-width: 500px;
+    width: 100%;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #5a5a5a;
+    margin: 0 10px;
+    white-space: nowrap;
+  }
+  .modal-credit-card input {
+    border: none;
+    border-bottom: 1px solid #555555;
+    background-color: #f8f8b2;
+    outline: none;
+    padding: 0 5px;
+  }
+  .modal-credit-card select {
+    border: none;
+    border-bottom: 1px solid #555555;
+    background-color: #f8f8b2;
+    outline: none;
+    padding: 0 5px;
+  }
+  .modal-credit-card textarea {
+    resize: none;
+    background-color: #f8f8b2;
+    border: none;
+    border-bottom: 1px solid #555555;
+    outline: none;
+    height: 100px;
+    padding: 5px;
+  }
+  .modal-credit-card option {
+    background-color: #fff;
+    outline: none;
+  }
+  
+  .modal-credit-card-inner-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+  }
+  .modal-credit-card-inner-header i {
+    position: static;
+  }
+  
+  .modal-credit-card-inner-body {
+    width: 100%;
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 10px;
+  }
+  
+  .modal-credit-card-inner-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .modal-credit-card-inner-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .modal-credit-card-inner-footer a {
+    color: #363636;
+    justify-self: flex-start;
+    border-bottom: 1px solid #363636;
+    font-weight: bold;
+  }
+  
+  .modal-credit-card-inner-footer-btn {
+    justify-self: flex-end;
+  }
+  
+  .modal-credit-card-inner-footer-btn button {
+    padding: 5px 15px;
+  }
+  
+  .description-left-side-download-app-btn {
+    margin-bottom: 10px;
+  }
+  
+  .invitation-right-side-download-app-btn {
+    margin-bottom: 10px;
+  }
+  
+  .benefits-left-side-download-app-btn {
+    margin-bottom: 10px;
+  }
+  
+  .modal-submit {
+    height: 250px;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fdfdfd;
+    position: fixed;
+    bottom: 0;
+    right: -100%;
+    padding: 10px;
+    transition: 4s;
+  }
+  
+  .modal-submit-close {
+    width: 100%;
+    float: right;
+  }
+  .modal-submit-close i {
+    color: #363636;
+    font-size: 20px;
+    float: right;
+  }
+  
+  .modal-submit-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+  }
+  
+  .modal-submit-checked {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .modal-submit-checked i {
+    font-size: 100px;
+    color: #11C76F;
+  }
+  
+  .modal-submit-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+  }

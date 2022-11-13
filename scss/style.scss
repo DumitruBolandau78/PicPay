@@ -104,7 +104,12 @@ header {
     }
 
     i {
-        font-size: 13px;
+        font-size: 25px;
+        position: relative;
+        top: 5px;
+        margin-left: 10px;
+        cursor: pointer;
+        color: black;
     }
 }
 

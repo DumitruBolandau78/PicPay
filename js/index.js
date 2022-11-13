@@ -65,3 +65,16 @@ function submit(){
 function modalSubmitClose(){
     document.getElementById('modal-submit').style.right = '-100%';
 }
+
+let mod = true;
+
+function darkMode() {
+    if (mod){
+        document.getElementById('mod').href = './css/style_darkmode.css';
+        mod = false;
+    }
+    else {
+        document.getElementById('mod').href = './css/style.css';
+        mod = true;
+    }
+}
