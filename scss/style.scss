@@ -279,6 +279,10 @@ aside {
     height: 100vh;
     transition: .4s ease-in-out;
     display: none;
+
+    a {
+        font-size: 20px;
+    }
 }
 
 .aside-menu {
@@ -313,10 +317,6 @@ aside {
 .aside-menu-logo img {
     width: 100%;
     max-width: 150px;
-}
-
-aside a {
-    font-size: 20px;
 }
 
 .modal-credit-card {
@@ -373,10 +373,10 @@ aside a {
     justify-content: space-between;
     padding: 10px;
     width: 100%;
-}
 
-.modal-credit-card-inner-header i {
-    position: static;
+    i {
+        position: static;
+    }
 }
 
 .modal-credit-card-inner-body {
@@ -399,13 +399,13 @@ aside a {
     width: 100%;
     align-items: center;
     margin-bottom: 10px;
-}
 
-.modal-credit-card-inner-footer a {
-    color: rgb(54, 54, 54);
-    justify-self: flex-start;
-    border-bottom: 1px solid rgb(54, 54, 54);
-    font-weight: bold;
+    a {
+        color: rgb(54, 54, 54);
+        justify-self: flex-start;
+        border-bottom: 1px solid rgb(54, 54, 54);
+        font-weight: bold;
+    }
 }
 
 .modal-credit-card-inner-footer-btn {
@@ -465,11 +465,11 @@ aside a {
     width: 100%;
     display: flex;
     justify-content: center;
-}
 
-.modal-submit-checked i {
-    font-size: 100px;
-    color: #11C76F;
+    i {
+        font-size: 100px;
+        color: #11C76F;
+    }
 }
 
 .modal-submit-title {

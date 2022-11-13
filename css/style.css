@@ -256,6 +256,9 @@ aside {
   transition: .4s ease-in-out;
   display: none;
 }
+aside a {
+  font-size: 20px;
+}
 
 .aside-menu {
   display: flex;
@@ -289,10 +292,6 @@ aside {
 .aside-menu-logo img {
   width: 100%;
   max-width: 150px;
-}
-
-aside a {
-  font-size: 20px;
 }
 
 .modal-credit-card {
@@ -344,7 +343,6 @@ aside a {
   padding: 10px;
   width: 100%;
 }
-
 .modal-credit-card-inner-header i {
   position: static;
 }
@@ -370,7 +368,6 @@ aside a {
   align-items: center;
   margin-bottom: 10px;
 }
-
 .modal-credit-card-inner-footer a {
   color: #363636;
   justify-self: flex-start;
@@ -435,7 +432,6 @@ aside a {
   display: flex;
   justify-content: center;
 }
-
 .modal-submit-checked i {
   font-size: 100px;
   color: #11C76F;
