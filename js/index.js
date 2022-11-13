@@ -25,8 +25,6 @@ function modalCreditCardClose() {
     document.getElementById("modal-credit-card").style.display = 'none';
 }
 
-// document.addEventListener('DOMContentLoaded', submit);
-
 function submit(){
     let query = window.matchMedia("(max-width: 600px)");
 
