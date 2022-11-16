@@ -53,12 +53,17 @@ function submit(){
         }
     }
     else {
-        alert('Thank you for your request');
-        document.getElementById('fullName').value = '';
-        document.getElementById('number').value = '';
-        document.getElementById('email').value = '';
-        document.getElementById('message').value = '';
-        document.getElementById('MasterCard').selected = 'selected';
+        if (fullName === '' || number === '' || email === '' || message === ''){
+            alert('Please fill out the form!')
+        }
+        else {
+            alert('Thank you for your request');
+            document.getElementById('fullName').value = '';
+            document.getElementById('number').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
+            document.getElementById('MasterCard').selected = 'selected';
+        }
     }    
 }
 
